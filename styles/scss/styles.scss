@@ -40,8 +40,9 @@ a[href="https://www.thewholepye.com"]:hover {
 }
 
 #hero {
-  background-color: $slateGrey;
   color: $white;
+  background: $slateGrey $heroImg no-repeat;
+  background-size: cover;
 
     h2 {
       font-size: $base-fontSize--descPara;
@@ -190,9 +191,6 @@ a[href="https://www.thewholepye.com"]:hover {
   #hero, #contact, #about, #experience, #skills { padding: $tablet-spacingDouble; }
 
   #hero {
-    background: $heroImg;
-    background-size: cover;
-    background-repeat: no-repeat;
 
     h2 {
       font-size: $tablet-fontSize--descPara;
@@ -255,7 +253,7 @@ a[href="https://www.thewholepye.com"]:hover {
       max-width: 43.75rem; // 700px
       margin: $tablet-spacing auto $tablet-spacingDouble;
 
-      > div { max-width: 4.5rem; } // 72px
+      > div { max-width: 3.75rem; } // 60px
     }
 
     aside { font-size: $desktop-fontSize--descPara; }
