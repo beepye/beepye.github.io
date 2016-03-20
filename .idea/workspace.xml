@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f87b9cd7-6816-4451-b1f9-53a71f0a64d4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/boston-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ronnie_and_coop.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/63c41b17976ad848838a7f7939d270132df0f317/_vars.scssc" afterPath="$PROJECT_DIR$/.sass-cache/63c41b17976ad848838a7f7939d270132df0f317/_vars.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/63c41b17976ad848838a7f7939d270132df0f317/styles.scssc" afterPath="$PROJECT_DIR$/.sass-cache/63c41b17976ad848838a7f7939d270132df0f317/styles.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/styles.css" afterPath="$PROJECT_DIR$/styles/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scss/_vars.scss" afterPath="$PROJECT_DIR$/styles/scss/_vars.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scss/styles.scss" afterPath="$PROJECT_DIR$/styles/scss/styles.scss" />
-    </list>
+    <list default="true" id="f87b9cd7-6816-4451-b1f9-53a71f0a64d4" name="Default" comment="" />
     <ignored path="beepye.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,8 +67,8 @@
           <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/scss/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+                <state relative-caret-position="-1695">
+                  <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
                   <folding>
                     <element signature="e#1550#1903#0" expanded="false" />
                     <element signature="e#1912#2005#0" expanded="false" />
@@ -265,12 +257,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1458494406031</updated>
-      <workItem from="1458494409426" duration="6179000" />
+      <workItem from="1458494409426" duration="6297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6179000" />
+    <option name="totallyTimeSpent" value="6297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
@@ -347,8 +339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="-1695">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding>
             <element signature="e#1550#1903#0" expanded="false" />
             <element signature="e#1912#2005#0" expanded="false" />
