@@ -15,6 +15,14 @@ p {
 a {
   color: $white;
   text-decoration: none;
+  transition: all .1s ease-in-out;
+  display: inline-block;
+}
+
+a[href="https://www.thewholepye.com"]:hover {
+  img {
+    transform: translateY(-0.5rem); // -8px
+  }
 }
 
 #siteContainer {
@@ -46,7 +54,7 @@ a {
       font-size: $base-fontSize--name;
       font-weight: 500;
 
-      img { max-width: 50px; }
+      img { max-width: 3.125rem; } // 50px
     }
 
   .hero-contactIcons {
@@ -61,6 +69,13 @@ a {
       max-width: 2.5rem; // 40px
       width: 25%;
       display: inline-block;
+      transition: all 1s linear;
+
+      &:hover {
+        img {
+          transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); // -5px
+        }
+      }
 
       img { width: 100%; }
     }
@@ -112,6 +127,13 @@ a {
   }
 }
 
+#backToTop {
+  width: 6.25rem; // 100px
+  margin: $base-spacingDouble auto;
+
+  img { width: 100%; }
+}
+
 .textContainer {
   align-self: center;
   margin-bottom: $base-spacingDouble;
@@ -141,13 +163,6 @@ a {
   }
 }
 
-#backToTop {
-  width: 6.25rem; // 100px
-  margin: $base-spacingDouble auto;
-
-  img { width: 100%; }
-}
-
 .TWP-logo--sm { width: 12.5rem; } // 200px
 
 .TWP-logo--lg {
@@ -156,6 +171,10 @@ a {
   position: absolute;
   right: 4.5rem; // 72px
   bottom: 3.25rem; // 52px
+}
+
+.anchorTranslate:hover {
+  transform: translateY(-0.125rem);
 }
 
 // Tablet Styles
