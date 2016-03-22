@@ -1,2 +1,2 @@
 # beepye.github.io
-The resume site design of www.thebrianpye.com
+The resume site of Brian Pye (www.thebrianpye.com)
