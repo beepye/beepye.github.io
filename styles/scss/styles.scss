@@ -265,9 +265,8 @@ a[href="https://www.thewholepye.com"]:hover {
 
   .flexContainer.about {
     display: flex;
-    background-image: $aboutImg;
+    background: $aboutImg no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
   }
 
   .TWP-logo--sm { display: none; }
