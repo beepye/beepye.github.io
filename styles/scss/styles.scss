@@ -1,13 +1,13 @@
 @import "vars";
 
 body {
-  font-size: $base-fontSize;
+  font-size: $fontSize-base;
   font-family: "Hind Siliguri", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
 }
 
 p {
-  font-size: $base-fontSize--descPara;
+  font-size: $fontSize-base;
   color: $white;
   margin-bottom: $base-spacing;
 }
@@ -23,14 +23,15 @@ header {
   width: 100%;
   text-align: center;
   margin-bottom: $base-spacingDouble;
-  font-size: $base-fontSize--sectionHeader;
+  font-size: $fontSize-lg;
   font-weight: 600;
   color: $white;
   text-decoration: underline;
 }
 
 h2 {
-  font-size: $base-fontSize--descPara;
+  color: $white;
+  font-size: $fontSize-base;
   font-weight: 300;
   top: -10px;
   position: relative;
@@ -38,13 +39,13 @@ h2 {
 
 aside {
  display: inline-block;
- font-size: $base-fontSize--small;
+ font-size: $fontSize-xm;
  font-weight: 600;
  padding-left: $base-spacing;
 }
 
 li {
-  font-size: $base-fontSize--descPara;
+  font-size: $fontSize-base;
   color: $white;
   padding-left: $base-spacing;
 }
@@ -74,7 +75,7 @@ a[href="https://www.thewholepye.com"]:hover {
 }
 
 .listHeader {
-  font-size: $base-fontSize--descHeader;
+  font-size: $fontSize-m;
   font-weight: 500;
   color: $darkGrey;
   padding-left: 0;
@@ -86,8 +87,7 @@ a[href="https://www.thewholepye.com"]:hover {
 }
 
 .hero {
-  color: $white;
-  background: $slateGrey $heroImg no-repeat;
+  background: $medGrey $heroImg no-repeat;
   background-size: cover;
 
   aside {
@@ -96,12 +96,12 @@ a[href="https://www.thewholepye.com"]:hover {
   }
 }
 
-.heroHeaderContainer {
+.hero-headerContainer {
   align-self: center;
   margin-bottom: $base-spacingDouble;
 
   header {
-    font-size: $base-fontSize--name;
+    font-size: $fontSize-xl;
     font-weight: 400;
     text-decoration: none;
     margin-bottom: 0;
@@ -124,10 +124,8 @@ a[href="https://www.thewholepye.com"]:hover {
 
     img { width: 100%; }
 
-    &:hover {
-      img {
-        transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); // -5px
-      }
+    &:hover img {
+      transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); // -5px
     }
   }
 }
@@ -139,16 +137,10 @@ a[href="https://www.thewholepye.com"]:hover {
   
   .sectionHeader { color: $darkGrey; }
 
-  li {
-    color: $medGrey;
-  }
-
-  .listHeader { color: $darkGrey; }
+  li { color: $medGrey; }
 }
 
-.about {
-  background-color: $orange;
-}
+.about { background-color: $orange; }
 
 .contact {
   background-color: $darkGrey;
@@ -180,9 +172,9 @@ a[href="https://www.thewholepye.com"]:hover {
 
 @media (min-width: 700px) {
 
-  h2 { font-size: $tablet-fontSize--descPara; }
+  h2 { font-size: $fontSize-sm; }
 
-  p { font-size: $tablet-fontSize--descPara; }
+  p { font-size: $fontSize-sm; }
 
   .backToTop-btn {
     width: 9.375rem; // 150px
@@ -191,31 +183,30 @@ a[href="https://www.thewholepye.com"]:hover {
     img { width: 100%; }
   }
 
-  .hero, .contact, .about, .experience, .skills { padding: $tablet-spacingDouble; }
+  .contentContainer { padding: $tablet-spacingDouble; }
 
   .hero {
 
-    header { font-size: $tablet-fontSize--name; }
+    header { font-size: $fontSize-xxl; }
 
-    .hero-contactIcons {
-      max-width: 31.25rem; // 500px
-      margin: 0 auto $tablet-spacing;
+    aside { font-size: $fontSize-sm; }
+  }
 
-      > div { max-width: 2.8125rem; } // 45px
-    }
+  .hero-contactIcons {
+    max-width: 31.25rem; // 500px
+    margin: 0 auto $tablet-spacing;
 
-    aside { font-size: $tablet-fontSize--descPara; }
+    > div { max-width: 2.8125rem; } // 45px
   }
 
   .headingContainer { margin-bottom: $tablet-spacing; }
 
-  .sectionHeader { font-size: $tablet-fontSize--sectionHeader; }
+  .sectionHeader { font-size: $fontSize-xl; }
 
-  .sectionList li {
-    font-size: $tablet-fontSize--descPara;
+  li { font-size: $fontSize-sm; }
 
-    &.listHeader { font-size: $tablet-fontSize--descHeader; }
-  }
+  li.listHeader { font-size: $fontSize-lg; }
+
 }
 
 /**********************
@@ -224,14 +215,16 @@ a[href="https://www.thewholepye.com"]:hover {
 
 @media (min-width: 1000px) {
 
-  h2 { font-size: $desktop-fontSize--descPara; }
+  h2 { font-size: $fontSize-m; }
 
-  p { font-size: $desktop-fontSize--descPara; }
+  p {
+    font-size: $fontSize-m;
+    font-weight: 300;
+  }
 
   .backToTop-btn { display: none; }
 
   .skills, .experience, .about, .contact {
-    box-sizing: border-box;
     width: 50%;
     justify-content: flex-start;
   }
@@ -239,19 +232,22 @@ a[href="https://www.thewholepye.com"]:hover {
   .hero {
     height: 43.75rem; // 700px
 
-    header { font-size: $desktop-fontSize--name; }
+    header { font-size: $fontSize-bam; }
 
-    .hero-contactIcons {
-      max-width: 43.75rem; // 700px
-      margin: $tablet-spacing auto $tablet-spacingDouble;
-
-      > div { max-width: 3.75rem; } // 60px
-    }
-
-    aside { font-size: $desktop-fontSize--descPara; }
+    aside { font-size: $fontSize-m; }
   }
 
-  .sectionList li { font-size: $desktop-fontSize--descPara; }
+  li {
+    font-size: $fontSize-m;
+    font-weight: 300;
+  }
+
+  .hero-contactIcons {
+    max-width: 43.75rem; // 700px
+    margin: $tablet-spacing auto $tablet-spacingDouble;
+
+    > div { max-width: 3.75rem; } // 60px
+  }
 
   .flexContainer {
     display: flex;
