@@ -27,6 +27,26 @@ header {
   text-decoration: underline;
 }
 
+h2 {
+  font-size: 1.125rem;
+  font-weight: 300;
+  top: -10px;
+  position: relative;
+}
+
+aside {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding-left: 0.75rem;
+}
+
+li {
+  font-size: 1.125rem;
+  color: white;
+  padding-left: 0.75rem;
+}
+
 a[href="https://www.thewholepye.com"]:hover img {
   transform: translateY(-0.5rem);
 }
@@ -48,16 +68,17 @@ a[href="https://www.thewholepye.com"]:hover img {
 .sectionList {
   margin-bottom: 1.5rem;
 }
-.sectionList > li {
-  font-size: 1.125rem;
-  color: white;
-  padding-left: 0.75rem;
-}
-.sectionList > li.listHeader {
+
+.listHeader {
   font-size: 1.5rem;
   font-weight: 500;
   color: rgba(70, 70, 70, 0.8);
   padding-left: 0;
+}
+
+.contactAnchor {
+  color: #00a6b6;
+  text-decoration: underline;
 }
 
 .hero {
@@ -67,26 +88,18 @@ a[href="https://www.thewholepye.com"]:hover img {
 }
 .hero aside {
   align-self: center;
+  font-weight: 300;
 }
 
-.heroHeader {
+.heroHeaderContainer {
   align-self: center;
   margin-bottom: 1.5rem;
 }
-.heroHeader h2 {
-  font-size: 1.125rem;
-  font-weight: 300;
-  top: -10px;
-  position: relative;
-}
-.heroHeader header {
+.heroHeaderContainer header {
   font-size: 3rem;
   font-weight: 400;
   text-decoration: none;
   margin-bottom: 0;
-}
-.heroHeader header img {
-  max-width: 3.125rem;
 }
 
 .hero-contactIcons {
@@ -103,11 +116,11 @@ a[href="https://www.thewholepye.com"]:hover img {
   display: inline-block;
   transition: all 1s linear;
 }
-.hero-contactIcons > div:hover img {
-  transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05);
-}
 .hero-contactIcons > div img {
   width: 100%;
+}
+.hero-contactIcons > div:hover img {
+  transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05);
 }
 
 .skills {
@@ -120,34 +133,20 @@ a[href="https://www.thewholepye.com"]:hover img {
 .experience .sectionHeader {
   color: rgba(70, 70, 70, 0.8);
 }
-.experience > .sectionList li {
+.experience li {
   color: #666464;
 }
-.experience > .sectionList li.listHeader {
+.experience .listHeader {
   color: rgba(70, 70, 70, 0.8);
-}
-.experience > .sectionList li > aside {
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding-left: 0.75rem;
 }
 
 .about {
   background-color: rgba(186, 97, 32, 0.8);
 }
-.about a {
-  color: #00a6b6;
-  text-decoration: underline;
-}
 
 .contact {
   background-color: rgba(70, 70, 70, 0.8);
   position: relative;
-}
-.contact a {
-  color: #00a6b6;
-  text-decoration: underline;
 }
 
 .backToTop-btn {
@@ -178,6 +177,10 @@ a[href="https://www.thewholepye.com"]:hover img {
   Tablet Styles
 **********************/
 @media (min-width: 700px) {
+  h2 {
+    font-size: 1.375rem;
+  }
+
   p {
     font-size: 1.375rem;
   }
@@ -194,9 +197,6 @@ a[href="https://www.thewholepye.com"]:hover img {
     padding: 4.5rem;
   }
 
-  .hero h2 {
-    font-size: 1.375rem;
-  }
   .hero header {
     font-size: 4.5rem;
   }
@@ -230,6 +230,10 @@ a[href="https://www.thewholepye.com"]:hover img {
   Desktop Styles
 **********************/
 @media (min-width: 1000px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+
   p {
     font-size: 1.75rem;
   }
@@ -246,9 +250,6 @@ a[href="https://www.thewholepye.com"]:hover img {
 
   .hero {
     height: 43.75rem;
-  }
-  .hero h2 {
-    font-size: 1.75rem;
   }
   .hero header {
     font-size: 6.25rem;
