@@ -19,130 +19,34 @@ a {
   display: inline-block;
 }
 
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: $base-spacingDouble;
+  font-size: $base-fontSize--sectionHeader;
+  font-weight: 600;
+  color: $white;
+  text-decoration: underline;
+}
+
 a[href="https://www.thewholepye.com"]:hover {
   img {
     transform: translateY(-0.5rem); // -8px
   }
 }
 
-#siteContainer {
+.siteContainer {
   min-width: 18.75rem; // 300px
   margin: 0 auto;
   position: relative;
 }
 
-#hero, #contact, #about, #experience, #skills {
+.contentContainer {
   padding: $base-spacingDouble;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   flex-direction: column;
-}
-
-#hero {
-  color: $white;
-  background: $slateGrey $heroImg no-repeat;
-  background-size: cover;
-
-    h2 {
-      font-size: $base-fontSize--descPara;
-      font-weight: 300;
-    }
-
-    header {
-      font-size: $base-fontSize--name;
-      font-weight: 500;
-
-      img { max-width: 3.125rem; } // 50px
-    }
-
-  .hero-contactIcons {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    max-width: 25rem; // 400px
-    margin: 0 auto $base-spacing;
-
-    > div {
-      max-width: 1.875rem; // 30px
-      width: 25%;
-      display: inline-block;
-      transition: all 1s linear;
-
-      &:hover {
-        img {
-          transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); // -5px
-        }
-      }
-
-      img { width: 100%; }
-    }
-  }
-
-  aside { align-self: center; }
-}
-
-#skills { background-color: $blue; }
-
-#experience {
-  background-color: $lightGrey;
-  
-  .sectionHeading { color: $darkGrey; }
-
-  .sectionList li {
-    color: $medGrey;
-
-    &.listHeader { color: $darkGrey; }
-
-    > a {
-      color: $darkGrey;
-      text-decoration: none;
-    }
-
-    > span {
-      font-size: $base-fontSize--small;
-      font-weight: 600;
-      padding-left: $base-spacing;
-    }
-  }
-}
-
-#about {
-  background-color: $orange;
-
-  a {
-    color: $blue;
-    text-decoration: underline;
-  }
-}
-
-#contact { 
-  background-color: $darkGrey; 
-  
-  a {
-    color: $blue;
-    text-decoration: underline;
-  }
-}
-
-#backToTop {
-  width: 6.25rem; // 100px
-  margin: $base-spacingDouble auto;
-
-  img { width: 100%; }
-}
-
-.textContainer {
-  align-self: center;
-  margin-bottom: $base-spacingDouble;
-}
-
-.sectionHeading {
-  font-size: $base-fontSize--sectionHeader;
-  font-weight: 600;
-  color: $white;
-  text-decoration: underline;
 }
 
 .sectionList {
@@ -162,6 +66,106 @@ a[href="https://www.thewholepye.com"]:hover {
   }
 }
 
+.hero {
+  color: $white;
+  background: $slateGrey $heroImg no-repeat;
+  background-size: cover;
+
+  aside { align-self: center; }
+}
+
+.heroHeader {
+  align-self: center;
+  margin-bottom: $base-spacingDouble;
+
+  h2 {
+    font-size: $base-fontSize--descPara;
+    font-weight: 300;
+    top: -10px;
+    position: relative;
+  }
+
+  header {
+    font-size: $base-fontSize--name;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 0;
+
+    img { max-width: 3.125rem; } // 50px
+  }
+}
+
+.hero-contactIcons {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  max-width: 25rem; // 400px
+  margin: 0 auto $base-spacing;
+
+  > div {
+    max-width: 1.875rem; // 30px
+    width: 25%;
+    display: inline-block;
+    transition: all 1s linear;
+
+    &:hover {
+      img {
+        transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); // -5px
+      }
+    }
+
+    img { width: 100%; }
+  }
+}
+
+.skills { background-color: $blue; }
+
+.experience {
+  background-color: $lightGrey;
+  
+  .sectionHeader { color: $darkGrey; }
+
+  > .sectionList li {
+    color: $medGrey;
+
+    &.listHeader { color: $darkGrey; }
+
+    > aside {
+      display: inline-block;
+      font-size: $base-fontSize--small;
+      font-weight: 600;
+      padding-left: $base-spacing;
+    }
+  }
+}
+
+.about {
+  background-color: $orange;
+
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
+}
+
+.contact {
+  background-color: $darkGrey;
+  position: relative;
+  
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
+}
+
+.backToTop-btn {
+  width: 6.25rem; // 100px
+  margin: $base-spacingDouble auto;
+
+  img { width: 100%; }
+}
+
 .TWP-logo--sm { width: 12.5rem; } // 200px
 
 .TWP-logo--lg {
@@ -172,36 +176,30 @@ a[href="https://www.thewholepye.com"]:hover {
   bottom: 3.25rem; // 52px
 }
 
-.anchorTranslate:hover {
-  transform: translateY(-0.125rem);
-}
+.anchorTranslate:hover { transform: translateY(-0.125rem); }
 
-// Tablet Styles
+/**********************
+  Tablet Styles
+**********************/
+
 @media (min-width: 700px) {
 
   p { font-size: $tablet-fontSize--descPara; }
 
-  #backToTop {
+  .backToTop-btn {
     width: 9.375rem; // 150px
     margin: $tablet-spacingDouble auto;
 
     img { width: 100%; }
   }
 
-  #hero, #contact, #about, #experience, #skills { padding: $tablet-spacingDouble; }
+  .hero, .contact, .about, .experience, .skills { padding: $tablet-spacingDouble; }
 
-  #hero {
+  .hero {
 
-    h2 {
-      font-size: $tablet-fontSize--descPara;
-      font-weight: 300;
-      margin-top: -1rem; // -16px
-    }
+    h2 { font-size: $tablet-fontSize--descPara; }
 
-    header {
-      font-size: $tablet-fontSize--name;
-      font-weight: 500;
-    }
+    header { font-size: $tablet-fontSize--name; }
 
     .hero-contactIcons {
       max-width: 31.25rem; // 500px
@@ -213,9 +211,9 @@ a[href="https://www.thewholepye.com"]:hover {
     aside { font-size: $tablet-fontSize--descPara; }
   }
 
-  .textContainer { margin-bottom: $tablet-spacing; }
+  .headingContainer { margin-bottom: $tablet-spacing; }
 
-  .sectionHeading { font-size: $tablet-fontSize--sectionHeader; }
+  .sectionHeader { font-size: $tablet-fontSize--sectionHeader; }
 
   .sectionList li {
     font-size: $tablet-fontSize--descPara;
@@ -224,25 +222,23 @@ a[href="https://www.thewholepye.com"]:hover {
   }
 }
 
-// Desktop Styles
+/**********************
+  Desktop Styles
+**********************/
+
 @media (min-width: 1000px) {
 
   p { font-size: $desktop-fontSize--descPara; }
 
-  #backToTop { display: none; }
+  .backToTop-btn { display: none; }
 
-  #skills, #experience, #about, #contact {
+  .skills, .experience, .about, .contact {
     box-sizing: border-box;
     width: 50%;
-    display: flex;
     justify-content: flex-start;
   }
 
-  #about { background-color: rgba(186, 97, 32, .8); }
-
-  #contact { background-color: rgba(70, 70, 70, .8); }
-
-  #hero {
+  .hero {
     height: 43.75rem; // 700px
 
     h2 { font-size: $desktop-fontSize--descPara; }
@@ -261,12 +257,14 @@ a[href="https://www.thewholepye.com"]:hover {
 
   .sectionList li { font-size: $desktop-fontSize--descPara; }
 
-  .flexContainer { display: flex; }
-
-  .flexContainer.about {
+  .flexContainer {
     display: flex;
-    background: $aboutImg no-repeat;
-    background-size: cover;
+
+    &.about {
+      display: flex;
+      background: $aboutImg no-repeat;
+      background-size: cover;
+    }
   }
 
   .TWP-logo--sm { display: none; }
