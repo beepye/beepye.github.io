@@ -271,9 +271,6 @@ a[href="https://www.thewholepye.com"]:hover img {
 
   .flexContainer {
     display: flex;
-  }
-  .flexContainer.about {
-    display: flex;
     background: url(../../images/ronnie_and_coop-min.jpg) no-repeat;
     background-size: cover;
   }
