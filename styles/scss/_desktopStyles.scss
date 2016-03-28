@@ -5,20 +5,25 @@
 
 @media (min-width: 1000px) {
 
-  h2 {
-    font-size: $fontSize-m;
+  .flexContainer {
+    display: flex;
+    background: $aboutImg no-repeat;
+    background-size: cover;
   }
 
-  p {
-    font-size: $fontSize-m;
-    font-weight: 300;
+  .content-Container {
+    p {
+      font-size: $fontSize-m;
+      font-weight: 300;
+    }
+
+    li {
+      font-size: $fontSize-m;
+      font-weight: 300;
+    }
   }
 
-  .backToTop-btn {
-    display: none;
-  }
-
-  .skills, .experience, .about, .contact {
+  .desktop-halfWidth {
     width: 50%;
     justify-content: flex-start;
   }
@@ -30,14 +35,13 @@
       font-size: $fontSize-bam;
     }
 
+    h2 {
+      font-size: $fontSize-m;
+    }
+
     aside {
       font-size: $fontSize-m;
     }
-  }
-
-  li {
-    font-size: $fontSize-m;
-    font-weight: 300;
   }
 
   .hero-contactIcons {
@@ -50,17 +54,15 @@
     // 60px
   }
 
-  .flexContainer {
-    display: flex;
-    background: $aboutImg no-repeat;
-    background-size: cover;
-  }
-
   .TWP-logo--sm {
     display: none;
   }
 
   .TWP-logo--lg {
     display: block;
+  }
+
+  .backToTop-btn {
+    display: none;
   }
 }

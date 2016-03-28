@@ -69,8 +69,6 @@ body {
     font-weight: 600;
     padding-left: $base-spacing;
   }
-
-  .sectionHeader { color: $darkGrey; }
 }
 
 .hero {
@@ -129,7 +127,12 @@ body {
 
 .about { background-color: $orange; }
 
-.experience { background-color: $lightGrey; li { color: $medGrey; } }
+.experience { background-color: $lightGrey;
+
+  li { color: $medGrey; }
+
+  header { color: $darkGrey; }
+}
 
 .contact { background-color: $darkGrey; position: relative; }
 

@@ -4,22 +4,20 @@
 
 @media (min-width: 700px) {
 
-  h2 { font-size: $fontSize-sm; }
+  .content-Container {
+    padding: $tablet-spacingDouble;
 
-  p { font-size: $fontSize-sm; }
+    p { font-size: $fontSize-sm; }
 
-  .backToTop-btn {
-    width: 9.375rem; // 150px
-    margin: $tablet-spacingDouble auto;
+    li { font-size: $fontSize-sm; }
 
-    img { width: 100%; }
+    li:first-of-type { font-size: $fontSize-lg; }
   }
 
-  .contentContainer { padding: $tablet-spacingDouble; }
-
   .hero {
-
     header { font-size: $fontSize-xxl; }
+
+    h2 { font-size: $fontSize-sm; }
 
     aside { font-size: $fontSize-sm; }
   }
@@ -31,12 +29,12 @@
     > div { max-width: 2.8125rem; } // 45px
   }
 
-  .headingContainer { margin-bottom: $tablet-spacing; }
+  .hero-headerContainer { margin-bottom: $tablet-spacing; }
 
-  .sectionHeader { font-size: $fontSize-xl; }
+  .backToTop-btn {
+    width: 9.375rem; // 150px
+    margin: $tablet-spacingDouble auto;
 
-  li { font-size: $fontSize-sm; }
-
-  li.listHeader { font-size: $fontSize-lg; }
-
+    img { width: 100%; }
+  }
 }
