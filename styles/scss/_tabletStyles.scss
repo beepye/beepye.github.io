@@ -1,0 +1,40 @@
+/**********************
+  Tablet Styles
+**********************/
+
+@media (min-width: 700px) {
+
+  .content-Container {
+    padding: $tablet-spacingDouble;
+
+    p { font-size: $fontSize-sm; }
+
+    li { font-size: $fontSize-sm; }
+
+    li:first-of-type { font-size: $fontSize-lg; }
+  }
+
+  .hero {
+    header { font-size: $fontSize-xxl; }
+
+    h2 { font-size: $fontSize-sm; }
+
+    aside { font-size: $fontSize-sm; }
+  }
+
+  .hero-contactIcons {
+    max-width: 31.25rem; // 500px
+    margin: 0 auto $tablet-spacing;
+
+    > div { max-width: 2.8125rem; } // 45px
+  }
+
+  .hero-headerContainer { margin-bottom: $tablet-spacing; }
+
+  .backToTop-btn {
+    width: 9.375rem; // 150px
+    margin: $tablet-spacingDouble auto;
+
+    img { width: 100%; }
+  }
+}
