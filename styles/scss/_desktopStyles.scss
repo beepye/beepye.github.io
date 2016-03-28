@@ -1,0 +1,66 @@
+
+/**********************
+  Desktop Styles
+**********************/
+
+@media (min-width: 1000px) {
+
+  h2 {
+    font-size: $fontSize-m;
+  }
+
+  p {
+    font-size: $fontSize-m;
+    font-weight: 300;
+  }
+
+  .backToTop-btn {
+    display: none;
+  }
+
+  .skills, .experience, .about, .contact {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .hero {
+    height: 43.75rem; // 700px
+
+    header {
+      font-size: $fontSize-bam;
+    }
+
+    aside {
+      font-size: $fontSize-m;
+    }
+  }
+
+  li {
+    font-size: $fontSize-m;
+    font-weight: 300;
+  }
+
+  .hero-contactIcons {
+    max-width: 43.75rem; // 700px
+    margin: $tablet-spacing auto $tablet-spacingDouble;
+
+    > div {
+      max-width: 3.75rem;
+    }
+    // 60px
+  }
+
+  .flexContainer {
+    display: flex;
+    background: $aboutImg no-repeat;
+    background-size: cover;
+  }
+
+  .TWP-logo--sm {
+    display: none;
+  }
+
+  .TWP-logo--lg {
+    display: block;
+  }
+}

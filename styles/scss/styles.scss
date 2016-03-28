@@ -1,60 +1,14 @@
 @import "reset";
 @import "vars";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: $fontSize-base;
   font-family: "Hind Siliguri", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
-}
-
-p {
-  font-size: $fontSize-base;
-  color: $white;
-  margin-bottom: $base-spacing;
-}
-
-a {
-  color: $white;
-  text-decoration: none;
-  transition: all .1s ease-in-out;
-  display: inline-block;
-}
-
-header {
-  width: 100%;
-  text-align: center;
-  margin-bottom: $base-spacingDouble;
-  font-size: $fontSize-lg;
-  font-weight: 600;
-  color: $white;
-  text-decoration: underline;
-}
-
-h2 {
-  color: $white;
-  font-size: $fontSize-base;
-  font-weight: 300;
-  top: -10px;
-  position: relative;
-}
-
-aside {
- display: inline-block;
- font-size: $fontSize-xm;
- font-weight: 600;
- padding-left: $base-spacing;
-}
-
-li {
-  font-size: $fontSize-base;
-  color: $white;
-  padding-left: $base-spacing;
-}
-
-a[href="https://www.thewholepye.com"]:hover {
-  img {
-    transform: translateY(-0.5rem); // -8px
-  }
 }
 
 .siteContainer {
@@ -63,33 +17,73 @@ a[href="https://www.thewholepye.com"]:hover {
   position: relative;
 }
 
-.contentContainer {
+.content-Container {
   padding: $base-spacingDouble;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   flex-direction: column;
-}
 
-.sectionList {
-  margin-bottom: $base-spacingDouble;
-}
+  header {
+    text-align: center;
+    margin-bottom: $base-spacingDouble;
+    font-size: $fontSize-lg;
+    font-weight: 600;
+    color: $white;
+    text-decoration: underline;
+  }
 
-.listHeader {
-  font-size: $fontSize-m;
-  font-weight: 500;
-  color: $darkGrey;
-  padding-left: 0;
-}
+  p {
+    font-size: $fontSize-base;
+    color: $white;
+    margin-bottom: $base-spacing;
+  }
 
-.contactAnchor {
-  color: $blue;
-  text-decoration: underline;
+  a {
+    color: $white;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    display: inline-block;
+  }
+
+  ul {
+    margin-bottom: $base-spacingDouble;
+  }
+
+  li {
+    font-size: $fontSize-base;
+    color: $white;
+    padding-left: $base-spacing;
+  }
+
+  li:first-of-type {
+    font-size: $fontSize-m;
+    font-weight: 500;
+    color: $darkGrey;
+    padding-left: 0;
+  }
+
+  aside {
+    display: inline-block;
+    font-size: $fontSize-xm;
+    font-weight: 600;
+    padding-left: $base-spacing;
+  }
+
+  .sectionHeader { color: $darkGrey; }
 }
 
 .hero {
   background: $medGrey $heroImg no-repeat;
   background-size: cover;
+
+  h2 {
+    color: $white;
+    font-size: $fontSize-base;
+    font-weight: 300;
+    top: -10px;
+    position: relative;
+  }
 
   aside {
     align-self: center;
@@ -133,20 +127,13 @@ a[href="https://www.thewholepye.com"]:hover {
 
 .skills { background-color: $blue; }
 
-.experience {
-  background-color: $lightGrey;
-  
-  .sectionHeader { color: $darkGrey; }
-
-  li { color: $medGrey; }
-}
-
 .about { background-color: $orange; }
 
-.contact {
-  background-color: $darkGrey;
-  position: relative;
-}
+.experience { background-color: $lightGrey; li { color: $medGrey; } }
+
+.contact { background-color: $darkGrey; position: relative; }
+
+.contactAnchor { color: $blue; text-decoration: underline; }
 
 .backToTop-btn {
   width: 6.25rem; // 100px
@@ -167,96 +154,5 @@ a[href="https://www.thewholepye.com"]:hover {
 
 .anchorTranslate:hover { transform: translateY(-0.125rem); }
 
-/**********************
-  Tablet Styles
-**********************/
-
-@media (min-width: 700px) {
-
-  h2 { font-size: $fontSize-sm; }
-
-  p { font-size: $fontSize-sm; }
-
-  .backToTop-btn {
-    width: 9.375rem; // 150px
-    margin: $tablet-spacingDouble auto;
-
-    img { width: 100%; }
-  }
-
-  .contentContainer { padding: $tablet-spacingDouble; }
-
-  .hero {
-
-    header { font-size: $fontSize-xxl; }
-
-    aside { font-size: $fontSize-sm; }
-  }
-
-  .hero-contactIcons {
-    max-width: 31.25rem; // 500px
-    margin: 0 auto $tablet-spacing;
-
-    > div { max-width: 2.8125rem; } // 45px
-  }
-
-  .headingContainer { margin-bottom: $tablet-spacing; }
-
-  .sectionHeader { font-size: $fontSize-xl; }
-
-  li { font-size: $fontSize-sm; }
-
-  li.listHeader { font-size: $fontSize-lg; }
-
-}
-
-/**********************
-  Desktop Styles
-**********************/
-
-@media (min-width: 1000px) {
-
-  h2 { font-size: $fontSize-m; }
-
-  p {
-    font-size: $fontSize-m;
-    font-weight: 300;
-  }
-
-  .backToTop-btn { display: none; }
-
-  .skills, .experience, .about, .contact {
-    width: 50%;
-    justify-content: flex-start;
-  }
-
-  .hero {
-    height: 43.75rem; // 700px
-
-    header { font-size: $fontSize-bam; }
-
-    aside { font-size: $fontSize-m; }
-  }
-
-  li {
-    font-size: $fontSize-m;
-    font-weight: 300;
-  }
-
-  .hero-contactIcons {
-    max-width: 43.75rem; // 700px
-    margin: $tablet-spacing auto $tablet-spacingDouble;
-
-    > div { max-width: 3.75rem; } // 60px
-  }
-
-  .flexContainer {
-    display: flex;
-    background: $aboutImg no-repeat;
-    background-size: cover;
-  }
-
-  .TWP-logo--sm { display: none; }
-
-  .TWP-logo--lg { display: block; }
-}
+@import "tabletStyles";
+@import "desktopStyles";
