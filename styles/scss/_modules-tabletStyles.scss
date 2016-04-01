@@ -4,27 +4,23 @@
 
 @media (min-width: 700px) {
 
-  .bp-logo {
-    display: block;
-  }
+  h2 { font-size: $fontSize-sm; }
 
-  .content-Container {
-    padding: $tablet-spacingDouble;
+  header { font-size: $fontSize-lg; }
 
-    p { font-size: $fontSize-sm; }
+  p { font-size: $fontSize-sm; }
 
-    li { font-size: $fontSize-sm; }
+  li { font-size: $fontSize-sm; }
 
-    li:first-of-type { font-size: $fontSize-lg; }
-  }
+  li:first-of-type { font-size: $fontSize-lg; }
 
-  .hero {
-    header { font-size: $fontSize-xxl; }
+  .bp-logo { display: block; }
 
-    h2 { font-size: $fontSize-sm; }
+  .content-Container { padding: $tablet-spacingDouble; }
 
-    aside { font-size: $fontSize-sm; }
-  }
+  .hero aside { font-size: $fontSize-sm; }
+
+  .hero-headerContainer header { font-size: $fontSize-xxl; }
 
   .hero-contactIcons {
     max-width: 31.25rem; // 500px
@@ -38,7 +34,5 @@
   .backToTop-btn {
     width: 9.375rem; // 150px
     margin: $tablet-spacingDouble auto;
-
-    img { width: 100%; }
   }
 }
