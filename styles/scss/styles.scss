@@ -69,6 +69,8 @@ body {
     font-weight: 600;
     padding-left: $base-spacing;
   }
+
+  .contactAnchor { color: $blue; text-decoration: underline; }
 }
 
 .hero {
@@ -135,8 +137,6 @@ body {
 }
 
 .contact { background-color: $darkGrey; position: relative; }
-
-.contactAnchor { color: $blue; text-decoration: underline; }
 
 .backToTop-btn {
   width: 6.25rem; // 100px
