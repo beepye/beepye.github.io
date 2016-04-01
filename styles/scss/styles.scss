@@ -11,10 +11,51 @@ body {
   line-height: 1.5;
 }
 
+.skills { background-color: $blue; }
+
+.about { background-color: $orange; }
+
+.contact { background-color: $darkGrey; position: relative; }
+
+.contactAnchor { color: $blue; text-decoration: underline; }
+
+.TWP-logo--sm { width: 12.5rem; } // 200px
+
+.TWP-logo--lg {
+  width: 12.5rem;
+  display: none;
+  position: absolute;
+  right: 4.5rem; // 72px
+  bottom: 3.25rem; // 52px
+}
+
+.bp-logo {
+  position: absolute;
+  width: 6.25rem; // 100px
+  top: $base-spacing;
+  left: $base-spacing;
+  opacity: 0.3;
+  display: none;
+}
+
 .siteContainer {
   min-width: 18.75rem; // 300px
   margin: 0 auto;
   position: relative;
+}
+
+.experience { background-color: $lightGrey;
+
+  li { color: $medGrey; }
+
+  header { color: $darkGrey; }
+}
+
+.backToTop-btn {
+  width: 6.25rem; // 100px
+  margin: $base-spacingDouble auto;
+
+  img { width: 100%; }
 }
 
 .content-Container {
@@ -74,6 +115,7 @@ body {
 .hero {
   background: $medGrey $heroImg no-repeat;
   background-size: cover;
+  position: relative;
 
   h2 {
     color: $white;
@@ -121,38 +163,6 @@ body {
       transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); // -5px
     }
   }
-}
-
-.skills { background-color: $blue; }
-
-.about { background-color: $orange; }
-
-.experience { background-color: $lightGrey;
-
-  li { color: $medGrey; }
-
-  header { color: $darkGrey; }
-}
-
-.contact { background-color: $darkGrey; position: relative; }
-
-.contactAnchor { color: $blue; text-decoration: underline; }
-
-.backToTop-btn {
-  width: 6.25rem; // 100px
-  margin: $base-spacingDouble auto;
-
-  img { width: 100%; }
-}
-
-.TWP-logo--sm { width: 12.5rem; } // 200px
-
-.TWP-logo--lg {
-  width: 12.5rem;
-  display: none;
-  position: absolute;
-  right: 4.5rem; // 72px
-  bottom: 3.25rem; // 52px
 }
 
 .anchorTranslate:hover { transform: translateY(-0.125rem); }
