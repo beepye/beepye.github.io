@@ -25,23 +25,15 @@
   display: none;
 }
 
+.backToTop-btn {
+  width: 6.25rem; // 100px
+  margin: $base-spacingDouble auto;
+}
+
 .siteContainer {
   min-width: 18.75rem; // 300px
   margin: 0 auto;
   position: relative;
-}
-
-.experience {
-  background-color: $lightGrey;
-
-  li { color: $medGrey; }
-
-  header { color: $darkGrey; }
-}
-
-.backToTop-btn {
-  width: 6.25rem; // 100px
-  margin: $base-spacingDouble auto;
 }
 
 .content-Container {
@@ -50,6 +42,14 @@
   flex-wrap: nowrap;
   justify-content: center;
   flex-direction: column;
+}
+
+.experience {
+  background-color: $lightGrey;
+
+  li { color: $medGrey; }
+
+  header { color: $darkGrey; }
 }
 
 .hero {
