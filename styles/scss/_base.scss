@@ -52,13 +52,6 @@ li {
   padding-left: $base-spacing;
 }
 
-li:first-of-type {
-  font-size: $fontSize-m;
-  font-weight: 500;
-  color: $darkGrey;
-  padding-left: 0;
-}
-
 aside {
   display: inline-block;
   font-size: $fontSize-xm;
@@ -67,3 +60,10 @@ aside {
 }
 
 img { width: 100%; }
+
+li:first-of-type {
+  font-size: $fontSize-m;
+  font-weight: 500;
+  color: $darkGrey;
+  padding-left: 0;
+}
