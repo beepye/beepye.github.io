@@ -87,12 +87,6 @@
     max-width: 1.875rem; // 30px
     width: 25%;
     display: inline-block;
-    transition: all 1s linear;
-
-    &:hover img {
-      transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); // -5px
-    }
+    transition: all 0.1s linear;
   }
 }
-
-.anchorTranslate:hover { transform: translateY(-0.125rem); }
