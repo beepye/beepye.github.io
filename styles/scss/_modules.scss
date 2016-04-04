@@ -2,9 +2,15 @@
 
 .about { background-color: $orange; }
 
-.contact { background-color: $darkGrey; position: relative; }
+.contact {
+  background-color: $darkGrey;
+  position: relative;
+}
 
-.contactAnchor { color: $blue; text-decoration: underline; }
+.contactAnchor {
+  color: $blue;
+  text-decoration: underline;
+}
 
 .TWP-logo--sm { width: 12.5rem; } // 200px
 
@@ -44,8 +50,7 @@
   flex-direction: column;
 }
 
-.experience {
-  background-color: $lightGrey;
+.experience { background-color: $lightGrey;
 
   li { color: $medGrey; }
 
