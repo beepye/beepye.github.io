@@ -50,6 +50,13 @@
   flex-direction: column;
 }
 
+.list-header {
+  font-size: $fontSize-m;
+  font-weight: 500;
+  color: $darkGrey;
+  padding-left: 0;
+}
+
 .experience { background-color: $lightGrey;
 
   li { color: $medGrey; }
