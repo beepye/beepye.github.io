@@ -2,15 +2,22 @@
 
 .about { background-color: $orange; }
 
+.about_anchor {
+  font-weight: 400;
+  color: $darkGrey;
+}
+
 .contact {
   background-color: $darkGrey;
   position: relative;
 }
 
-.contactAnchor {
-  color: $blue;
-  text-decoration: underline;
+.experience { background-color: $lightGrey;
+
+  li { color: $medGrey; }
 }
+
+.experience_header { color: $darkGrey; }
 
 .TWP-logo--sm { width: 12.5rem; } // 200px
 
@@ -31,7 +38,7 @@
   display: none;
 }
 
-.backToTop-btn {
+.btn-backToTop {
   width: 6.25rem; // 100px
   margin: $base-spacingDouble auto;
 }
@@ -42,52 +49,49 @@
   position: relative;
 }
 
-.content-Container {
+.contentContainer {
   padding: $base-spacingDouble;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
   flex-direction: column;
 }
 
-.list-header {
+.listHeader {
   font-size: $fontSize-m;
   font-weight: 500;
   color: $darkGrey;
   padding-left: 0;
 }
 
-.experience { background-color: $lightGrey;
-
-  li { color: $medGrey; }
-
-  header { color: $darkGrey; }
-}
-
 .hero {
   background: $medGrey $heroImg no-repeat;
   background-size: cover;
   position: relative;
-
-  aside {
-    align-self: center;
-    font-weight: 300;
-  }
 }
 
 .hero-headerContainer {
   align-self: center;
   margin-bottom: $base-spacingDouble;
-
-  header {
-    font-size: $fontSize-xl;
-    font-weight: 400;
-    text-decoration: none;
-    margin-bottom: 0;
-  }
 }
 
-.hero-contactIcons {
+.hero_header {
+  font-size: $fontSize-xl;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.hero_anchor {
+  color: $white;
+  text-decoration: none;
+}
+
+.hero_aside {
+  align-self: center;
+  font-weight: 300;
+}
+
+.hero-iconContainer {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;

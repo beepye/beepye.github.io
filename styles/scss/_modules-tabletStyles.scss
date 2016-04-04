@@ -6,33 +6,36 @@
 
   h2 { font-size: $fontSize-sm; }
 
-  header { font-size: $fontSize-lg; }
+  header {
+    font-size: $fontSize-lg;
+    font-weight: 600;
+  }
 
   p { font-size: $fontSize-sm; }
 
   li { font-size: $fontSize-sm; }
 
-  .list-header { font-size: $fontSize-lg; }
+  .btn-backToTop {
+    width: 9.375rem; // 150px
+    margin: $tablet-spacingDouble auto;
+  }
 
   .bp-logo { display: block; }
 
-  .content-Container { padding: $tablet-spacingDouble; }
+  .contentContainer { padding: $tablet-spacingDouble; }
 
-  .hero aside { font-size: $fontSize-sm; }
+  .listHeader { font-size: $fontSize-lg; }
 
-  .hero-headerContainer header { font-size: $fontSize-xxl; }
+  .hero-headerContainer { margin-bottom: $tablet-spacing; }
 
-  .hero-contactIcons {
+  .hero_header { font-size: $fontSize-xxl; }
+
+  .hero_aside { font-size: $fontSize-sm; }
+
+  .hero-iconContainer {
     max-width: 31.25rem; // 500px
     margin: 0 auto $tablet-spacing;
 
     > div { max-width: 2.8125rem; } // 45px
-  }
-
-  .hero-headerContainer { margin-bottom: $tablet-spacing; }
-
-  .backToTop-btn {
-    width: 9.375rem; // 150px
-    margin: $tablet-spacingDouble auto;
   }
 }

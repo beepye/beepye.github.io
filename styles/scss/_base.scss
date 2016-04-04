@@ -15,7 +15,6 @@ header {
   text-align: center;
   margin-bottom: $base-spacingDouble;
   font-size: $fontSize-lg;
-  font-weight: 600;
   color: $white;
   text-decoration: underline;
 }
@@ -35,9 +34,8 @@ p {
 }
 
 a {
-  color: $white;
-  text-decoration: none;
-  transition: all 0.1s ease-in-out;
+  color: $blue;
+  text-decoration: underline;
   display: inline-block;
 }
 
