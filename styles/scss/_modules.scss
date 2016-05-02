@@ -1,0 +1,108 @@
+.skills { background-color: $blue; }
+
+.about { background-color: $orange; }
+
+.about_anchor {
+  font-weight: 400;
+  color: $darkGrey;
+}
+
+.contact {
+  background-color: $darkGrey;
+  position: relative;
+}
+
+.experience { background-color: $lightGrey;
+
+  li { color: $medGrey; }
+}
+
+.experience_header { color: $darkGrey; }
+
+.TWP-logo--sm { width: 12.5rem; } // 200px
+
+.TWP-logo--lg {
+  width: 12.5rem;
+  display: none;
+  position: absolute;
+  right: 4.5rem; // 72px
+  bottom: 3.25rem; // 52px
+}
+
+.bp-logo {
+  position: absolute;
+  width: 6.25rem; // 100px
+  top: $base-spacing;
+  left: $base-spacing;
+  opacity: 0.3;
+  display: none;
+}
+
+.btn-backToTop {
+  width: 6.25rem; // 100px
+  margin: $base-spacingDouble auto;
+}
+
+.siteContainer {
+  min-width: 18.75rem; // 300px
+  margin: 0 auto;
+  position: relative;
+}
+
+.contentContainer {
+  padding: $base-spacingDouble;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.listHeader {
+  font-size: $fontSize-m;
+  font-weight: 500;
+  color: $darkGrey;
+  padding-left: 0;
+}
+
+.hero {
+  background: $medGrey $heroImg no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-headerContainer {
+  align-self: center;
+  margin-bottom: $base-spacingDouble;
+}
+
+.hero_header {
+  font-size: $fontSize-xl;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.hero_anchor {
+  color: $white;
+  text-decoration: none;
+}
+
+.hero_aside {
+  align-self: center;
+  font-weight: 300;
+}
+
+.hero-iconContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  max-width: 25rem; // 400px
+  margin: 0 auto $base-spacing;
+
+  > div {
+    max-width: 1.875rem; // 30px
+    width: 25%;
+    display: inline-block;
+    transition: all 0.1s linear;
+  }
+}

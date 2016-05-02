@@ -1,0 +1,5 @@
+.anchorTranslate:hover { transform: translateY(-0.125rem); } // 2px
+
+.iconTranslate:hover { transform: translateY(-0.3125rem) scale3d(1.05, 1.05, 1.05); } // -5px
+
+@media (min-width: 1000px) { .desktop-halfWidth { width: 50%; justify-content: flex-start; } }

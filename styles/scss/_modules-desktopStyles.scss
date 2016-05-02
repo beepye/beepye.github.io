@@ -1,0 +1,50 @@
+/**********************
+  Desktop Styles
+**********************/
+
+@media (min-width: 1000px) {
+
+  h2 { font-size: $fontSize-m; }
+
+  header {
+    font-size: $fontSize-xl;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: $fontSize-m;
+    font-weight: 300;
+  }
+
+  li {
+    font-size: $fontSize-m;
+    font-weight: 300;
+  }
+
+  .btn-backToTop { display: none; }
+
+  .bp-logo { display: block; }
+
+  .flexContainer {
+    display: flex;
+    background: $aboutImg no-repeat;
+    background-size: cover;
+  }
+
+  .hero { height: 43.75rem; } // 700px
+
+  .hero_aside { font-size: $fontSize-m; }
+
+  .hero_header { font-size: $fontSize-bam; }
+
+  .hero-iconContainer {
+    max-width: 43.75rem; // 700px
+    margin: $tablet-spacing auto $tablet-spacingDouble;
+
+    > div { max-width: 3.75rem; } // 60px
+  }
+
+  .TWP-logo--sm, .backToTop-btn { display: none; }
+
+  .TWP-logo--lg { display: block; }
+}

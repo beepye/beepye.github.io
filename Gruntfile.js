@@ -50,6 +50,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask( 'sandbox', [ 'connect:source' ] );
 
-    grunt.registerTask('dev', [ 'watch' ] );
+    grunt.registerTask( 'dev', [ 'watch' ] );
 
 };

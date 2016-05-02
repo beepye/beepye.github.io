@@ -1,0 +1,41 @@
+/**********************
+  Tablet Styles
+**********************/
+
+@media (min-width: 700px) {
+
+  h2 { font-size: $fontSize-sm; }
+
+  header {
+    font-size: $fontSize-lg;
+    font-weight: 600;
+  }
+
+  p { font-size: $fontSize-sm; }
+
+  li { font-size: $fontSize-sm; }
+
+  .btn-backToTop {
+    width: 9.375rem; // 150px
+    margin: $tablet-spacingDouble auto;
+  }
+
+  .bp-logo { display: block; }
+
+  .contentContainer { padding: $tablet-spacingDouble; }
+
+  .listHeader { font-size: $fontSize-lg; }
+
+  .hero-headerContainer { margin-bottom: $tablet-spacing; }
+
+  .hero_header { font-size: $fontSize-xxl; }
+
+  .hero_aside { font-size: $fontSize-sm; }
+
+  .hero-iconContainer {
+    max-width: 31.25rem; // 500px
+    margin: 0 auto $tablet-spacing;
+
+    > div { max-width: 2.8125rem; } // 45px
+  }
+}

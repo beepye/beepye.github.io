@@ -1,0 +1,62 @@
+@import "vars";
+
+* { box-sizing: border-box; }
+
+body {
+  font-size: $fontSize-base;
+  font-family: "Hind Siliguri", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5; margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+header {
+  text-align: center;
+  margin-bottom: $base-spacingDouble;
+  font-size: $fontSize-lg;
+  color: $white;
+  text-decoration: underline;
+}
+
+h2 {
+  color: $white;
+  font-size: $fontSize-base;
+  font-weight: 300;
+  top: -10px;
+  position: relative;
+  margin-top: 0;
+}
+
+p {
+  font-size: $fontSize-base;
+  color: $white;
+  margin-bottom: $base-spacing;
+}
+
+a {
+  color: $blue;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: $base-spacingDouble;
+  list-style: none;
+}
+
+li {
+  font-size: $fontSize-base;
+  color: $white;
+  padding-left: $base-spacing;
+}
+
+aside {
+  display: inline-block;
+  font-size: $fontSize-xm;
+  font-weight: 600;
+  padding-left: $base-spacing;
+}
+
+img { width: 100%; }
