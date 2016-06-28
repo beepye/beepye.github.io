@@ -4,8 +4,7 @@
 
 @media (min-width: 1000px) {
 
-  h2 { font-size: $fontSize-m; }
-
+  h1,
   header {
     font-size: $fontSize-xl;
     font-weight: 500;
@@ -20,6 +19,8 @@
     font-size: $fontSize-m;
     font-weight: 300;
   }
+
+  span { font-size: $fontSize-m; }
 
   .btn-backToTop { display: none; }
 

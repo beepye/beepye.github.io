@@ -4,8 +4,7 @@
 
 @media (min-width: 700px) {
 
-  h2 { font-size: $fontSize-sm; }
-
+  h1,
   header {
     font-size: $fontSize-lg;
     font-weight: 600;
@@ -14,6 +13,8 @@
   p { font-size: $fontSize-sm; }
 
   li { font-size: $fontSize-sm; }
+
+  span { font-size: $fontSize-sm; }
 
   .btn-backToTop {
     width: 9.375rem; // 150px
