@@ -1,39 +1,26 @@
-
-// Base Font Sizes
-$base-fontSize:                 1rem;     // 16px
-$base-fontSize--name:           3rem;     // 48px
-$base-fontSize--sectionHeader:  2rem;     // 32px
-$base-fontSize--descHeader:     1.5rem;   // 24px
-$base-fontSize--descPara:       1.125rem; // 18px
-$base-fontSize--small:          0.875rem; // 14px
+// Font sizing
+$fontSize-xm:   0.875rem; // 14px
+$fontSize-base: 1rem;     // 16px
+$fontSize-sm:   1.25rem;  // 22px
+$fontSize-m:    1.5rem;   // 24px
+$fontSize-lg:   2rem;     // 32px
+$fontSize-xl:   3rem;     // 48px
+$fontSize-xxl:  4.5rem;    // 72px
+$fontSize-bam:  6.25rem;  // 100px
 
 // Base Spacing
 $base-spacing:       0.75rem;           // 12px
 $base-spacingDouble: $base-spacing * 2; // 24px
 
-// Tablet Font Sizes
-$tablet-fontSize--name:           4.5rem;   // 72px
-$tablet-fontSize--sectionHeader:  3rem;     // 48px
-$tablet-fontSize--descHeader:     2.25rem;  // 36px
-$tablet-fontSize--descPara:       1.375rem; // 22px
-$tablet-fontSize--small:          1.25rem;  // 20px
-
 // Tablet Spacing
 $tablet-spacing:       2.25rem;             // 36px
 $tablet-spacingDouble: $tablet-spacing * 2; // 72px
 
-// Desktop Font Sizes
-$desktop-fontSize--name:      6.25rem; // 100px
-$desktop-fontSize--descPara:  1.75rem; // 28px
-
-// Desktop Spacing
-
 // Colors
 $lightGrey: rgba(218, 218, 218, 1); // #dadada
-$medGrey:   rgba(102, 100, 100, 1); // #666464
-$slateGrey: rgba(57, 111, 120, 1);  // #396f78
-$darkGrey:  rgba(70, 70, 70, 1);    // #464646
-$orange:    rgba(186, 97, 32, 1);   // #ba6120
+$medGrey:   rgba(57, 111, 120, 1);  // #396f78
+$darkGrey:  rgba(70, 70, 70, 0.8);    // #464646
+$orange:    rgba(186, 97, 32, 0.8);   // #ba6120
 $blue:      rgba(0, 166, 182, 1);   // #00a6b6
 $white:     rgba(255, 255, 255, 1); // #ffffff
 
