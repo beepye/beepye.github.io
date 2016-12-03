@@ -33,7 +33,10 @@
     background-position: 50% 50%;
   }
 
-  .hero { height: 43.75rem; } // 700px
+  .hero { 
+    min-height: 43.75rem; // 700px
+    height: 100vh;
+  }
 
   .hero_aside { font-size: $fontSize-m; }
 
