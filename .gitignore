@@ -1,3 +1,8 @@
+# Directories #
+###############
+node_modules/
+thebrianpye_design/
+
 # IntelliJ project files
 .idea
 *.iml
@@ -12,6 +17,7 @@ gen
 *.exe
 *.o
 *.so
+.gitignore
 
 # Packages #
 ############
@@ -42,7 +48,3 @@ gen
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Webstorm generated files #
-.idea/
->>>>>>> origin/master
