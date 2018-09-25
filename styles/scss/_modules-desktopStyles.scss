@@ -45,8 +45,6 @@
   .hero-iconContainer {
     max-width: 43.75rem; // 700px
     margin: $tablet-spacing auto $tablet-spacingDouble;
-
-    > div { max-width: 3.75rem; } // 60px
   }
 
   .TWP-logo--sm, .backToTop-btn { display: none; }

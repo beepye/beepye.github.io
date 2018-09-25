@@ -1,15 +1,18 @@
 {
-  "name": "",
-  "version": "",
+  "name": "ResumeSite_BrianPye",
+  "version": "1.0",
   "author": "Brian Pye",
-  "license": "",
-  "repository": "",
-  "description": "",
+  "license": "MIT",
+  "repository": "beepye.github.io",
+  "description": "Project files for my resume site at www.thebrianpye.com",
   "contributors": [
     {
-      "name": "",
-      "email": ""
+      "name": "Brian Pye",
+      "email": "brian@thebrianpye.com"
     }
   ],
-  "main": "gruntfile.js"
+  "main": "gruntfile.js",
+  "dependencies": {
+    "npm": "^6.4.1"
+  }
 }

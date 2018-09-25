@@ -34,6 +34,6 @@
     max-width: 31.25rem; // 500px
     margin: 0 auto $tablet-spacing;
 
-    > div { max-width: 2.8125rem; } // 45px
+    > div { width: 15%; } // 45px
   }
 }

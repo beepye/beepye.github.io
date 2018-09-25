@@ -95,13 +95,12 @@
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  max-width: 25rem; // 400px
+  justify-content: space-evenly;
   margin: 0 auto $base-spacing;
 
   > div {
-    max-width: 1.875rem; // 30px
-    width: 25%;
+    width: 10%;
+    min-width: 3rem;
     display: inline-block;
     transition: all 0.1s linear;
   }
