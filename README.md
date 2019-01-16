@@ -1,5 +1,5 @@
 # beepye.github.io
-The resume site of Brian Pye (www.thebrianpye.com)
+My personal live resume that can be found at www.thebrianpye.com
 
 ///
 
