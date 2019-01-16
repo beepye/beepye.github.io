@@ -37,6 +37,7 @@ span {
 
 a {
   color: #00a6b6;
+  font-weight: 400;
   text-decoration: underline;
   display: inline-block; }
 
