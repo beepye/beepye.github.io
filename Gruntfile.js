@@ -48,6 +48,8 @@ module.exports = function(grunt) {
 
     });
 
+    grunt.registerTask( 'default', [ 'dev' ] );
+
     grunt.registerTask( 'sandbox', [ 'connect:source' ] );
 
     grunt.registerTask( 'dev', [ 'watch' ] );
