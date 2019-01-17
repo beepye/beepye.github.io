@@ -27,8 +27,8 @@
   }
 
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(1.035, 1.035, 1.035);
+    transform: scale3d(1.035, 1.035, 1.035);
   }
 
   to {
@@ -40,10 +40,15 @@
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+
+  &.slower { // slow animation to 1sec
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+  }
 }
 
 @media (min-width: 1000px) { 
