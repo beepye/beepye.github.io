@@ -2,6 +2,8 @@
 
 * { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
   font-size: $fontSize-base;
   font-family: "Hind Siliguri", "Helvetica Neue", Arial, sans-serif;
